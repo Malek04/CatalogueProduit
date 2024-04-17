@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="bodyCat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerCategorie">
+   <children>
+      <Label fx:id="lblCode" layoutX="44.0" layoutY="43.0" text="Code:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNom" layoutX="44.0" layoutY="95.0" text="Nom:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" editable="false" layoutX="128.0" layoutY="47.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="txtNom" layoutX="128.0" layoutY="100.0" />
+      <CheckBox fx:id="chLigne" layoutX="44.0" layoutY="152.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="234.0" text="Enligne">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnDelete" layoutX="486.0" layoutY="48.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="50.0" prefWidth="100.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="359.0" layoutY="48.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="50.0" prefWidth="100.0" text="Add">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="486.0" layoutY="130.0" mnemonicParsing="false" onAction="#modifier" prefHeight="50.0" prefWidth="100.0" text="Update">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="359.0" layoutY="130.0" mnemonicParsing="false" onAction="#vider" prefHeight="50.0" prefWidth="100.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableCat" layoutX="44.0" layoutY="223.0" onMousePressed="#charger" prefHeight="200.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="113.60000228881836" text="Code" />
+          <TableColumn fx:id="colNom" prefWidth="300.00001525878906" text="Nom Categorie" />
+            <TableColumn fx:id="ColLigne" prefWidth="125.5999755859375" text="Vendable Enligne" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

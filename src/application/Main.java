@@ -2,9 +2,11 @@ package application;
 	
 import DAO.SingletonConnexion;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import metier.Categorie;
 import metier.CrudCategorie;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
@@ -26,8 +28,8 @@ public class Main extends Application {
 			else {
 				System.out.println("erreur de la suppression");
 			}*/
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
+			Parent root = FXMLLoader.load(getClass().getResource("/view/interfaceCategorie.fxml"));
+			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();

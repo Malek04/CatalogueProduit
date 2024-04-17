@@ -21,7 +21,6 @@ public class SingletonConnexion {
 		}
 		try {
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_catalogue_bi1?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC", "root", "");
-			System.out.println("Connexion ok..con..");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
