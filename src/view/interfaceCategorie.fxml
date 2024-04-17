@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="bodyCat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerCategorie">
    <children>
       <Label fx:id="lblCode" layoutX="44.0" layoutY="43.0" text="Code:">
@@ -49,11 +48,11 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <TableView fx:id="tableCat" layoutX="44.0" layoutY="223.0" onMousePressed="#charger" prefHeight="200.0" prefWidth="539.0">
+      <TableView fx:id="tableCat" layoutX="44.0" layoutY="223.0" onMousePressed="#charger" prefHeight="200.0" prefWidth="545.0">
         <columns>
           <TableColumn fx:id="colCode" prefWidth="113.60000228881836" text="Code" />
           <TableColumn fx:id="colNom" prefWidth="300.00001525878906" text="Nom Categorie" />
-            <TableColumn fx:id="ColLigne" prefWidth="125.5999755859375" text="Vendable Enligne" />
+            <TableColumn fx:id="ColLigne" prefWidth="129.60000000000002" text="Vendable Enligne" />
         </columns>
       </TableView>
    </children>
