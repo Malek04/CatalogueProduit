@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.acceuilController">
    <children>
       <VBox fx:id="boxMenu" prefHeight="496.0" prefWidth="154.0">
@@ -46,12 +45,7 @@
             </Label>
             <TextField fx:id="txtLogin" layoutX="249.0" layoutY="153.0" prefHeight="26.0" prefWidth="221.0" />
             <PasswordField fx:id="pwdPassword" layoutX="249.0" layoutY="220.0" prefHeight="26.0" prefWidth="222.0" />
-            <Button fx:id="btnConnecter" layoutX="170.0" layoutY="291.0" mnemonicParsing="false" text="Se Connecter">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnAnnuler" layoutX="323.0" layoutY="291.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Annuler">
+            <Button fx:id="btnConnecter" layoutX="250.0" layoutY="291.0" mnemonicParsing="false" onAction="#seConnecter" text="Se Connecter">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -25,10 +25,10 @@ public class Produit {
 	public void setQte(int qte) {
 		this.qte = qte;
 	}
-	public int getcat() {
+	public int getCat() {
 		return cat;
 	}
-	public void setcat(int cat) {
+	public void setCat(int cat) {
 		this.cat = cat;
 	}
 	public int getRef() {
