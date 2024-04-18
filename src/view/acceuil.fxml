@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.acceuilController">
+   <children>
+      <VBox fx:id="boxMenu" prefHeight="496.0" prefWidth="154.0">
+         <children>
+            <Button fx:id="btnGestionCat" mnemonicParsing="false" onAction="#gererCategorie" prefHeight="250.0" prefWidth="250.0" text="GestionCategorie">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGestionProd" mnemonicParsing="false" onAction="#gererProduit" prefHeight="250.0" prefWidth="154.0" text="Gestion Produit">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="bodyacceuil" layoutX="153.0" prefHeight="496.0" prefWidth="646.0">
+         <children>
+            <Label fx:id="lblTitre" layoutX="193.0" layoutY="45.0" text="Catalogue Produit">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="150.0" text="Login :">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="217.0" text="Password :">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLogin" layoutX="249.0" layoutY="153.0" prefHeight="26.0" prefWidth="221.0" />
+            <PasswordField fx:id="pwdPassword" layoutX="249.0" layoutY="220.0" prefHeight="26.0" prefWidth="222.0" />
+            <Button fx:id="btnConnecter" layoutX="170.0" layoutY="291.0" mnemonicParsing="false" text="Se Connecter">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnnuler" layoutX="323.0" layoutY="291.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Annuler">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgLogo" fitHeight="108.0" fitWidth="137.0" layoutX="232.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/img/interesting.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

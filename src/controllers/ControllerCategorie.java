@@ -85,6 +85,9 @@ public class ControllerCategorie implements Initializable{
         	d.setContentText("Erreur d'insertion");
         	d.showAndWait();
     	}
+    	txtCode.setText(null);
+    	txtNom.setText(null);
+    	chLigne.setSelected(false);
     	loadData();
     }
 
